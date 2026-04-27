@@ -1,3 +1,18 @@
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 10 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 10 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_partial.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 10 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_partial.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_with_duplicates.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 10 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_with_duplicates.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\empty.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 0 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\empty.csv
+ERROR    src.parsers.csv_parser:csv_parser.py:41 CSV file not found: /nonexistent/file.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\utf8_encoding.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 3 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\utf8_encoding.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:123 CSV structure valid: ['Fund Name', 'Date', 'NAV', 'Category', 'Inception Date', 'Manager']
+ERROR    src.parsers.csv_parser:csv_parser.py:127 CSV structure validation failed: CSV missing required columns: {'NonExistent'}
 DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
 DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
 DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
@@ -17,3 +32,23 @@ DEBUG    src.validators.data_validator:data_validator.py:79 Row 3 validation fai
 INFO     src.validators.data_validator:data_validator.py:196 Batch validation: 2 valid, 1 errors
 DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
 DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
+DEBUG    src.parsers.excel_parser:excel_parser.py:53 Parsed Excel sheet '0': C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.xlsx
+INFO     src.parsers.excel_parser:excel_parser.py:63 Successfully parsed 3 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.xlsx
+DEBUG    src.parsers.excel_parser:excel_parser.py:53 Parsed Excel sheet '0': C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.xlsx
+INFO     src.parsers.excel_parser:excel_parser.py:63 Successfully parsed 3 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.xlsx
+DEBUG    src.parsers.excel_parser:excel_parser.py:119 Found 1 sheets in C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.xlsx: ['Funds']
+ERROR    src.parsers.excel_parser:excel_parser.py:44 Excel file not found: /nonexistent/file.xlsx
+DEBUG    src.parsers.excel_parser:excel_parser.py:156 Excel structure valid: ['Fund Name', 'Date', 'NAV', 'Category', 'Inception Date', 'Manager']
+ERROR    src.parsers.excel_parser:excel_parser.py:160 Excel structure validation failed: Excel missing required columns: {'NonExistent'}
+INFO     src.parsers:__init__.py:39 Parsing CSV file: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 10 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\valid_complete.csv
+INFO     src.parsers:__init__.py:44 Parsing Excel file: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\test_parse_file.xlsx
+DEBUG    src.parsers.excel_parser:excel_parser.py:53 Parsed Excel sheet '0': C:\Shiv\Projects\AIML\FundLens\tests\fixtures\test_parse_file.xlsx
+INFO     src.parsers.excel_parser:excel_parser.py:63 Successfully parsed 2 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\test_parse_file.xlsx
+ERROR    src.parsers:__init__.py:32 File not found: /nonexistent/file.csv
+ERROR    src.parsers:__init__.py:49 Unsupported file type: .txt
+ERROR    src.parsers:__init__.py:49 Unsupported file type: .json
+INFO     src.parsers:__init__.py:39 Parsing CSV file: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\utf8_encoding.csv
+DEBUG    src.parsers.csv_parser:csv_parser.py:53 Parsed CSV with UTF-8 encoding: C:\Shiv\Projects\AIML\FundLens\tests\fixtures\utf8_encoding.csv
+INFO     src.parsers.csv_parser:csv_parser.py:61 Successfully parsed 3 rows from C:\Shiv\Projects\AIML\FundLens\tests\fixtures\utf8_encoding.csv
