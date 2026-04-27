@@ -1,0 +1,27 @@
+# Core HTTP Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Data Processing
+pandas>=2.1.0
+openpyxl>=3.1.0
+
+# Validation & Serialization
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Database
+sqlalchemy>=2.0.23
+asyncpg>=0.29.0
+alembic>=1.13.0
+
+# File Upload
+python-multipart>=0.0.6
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
+
+# Utilities
+python-dotenv>=1.0.0

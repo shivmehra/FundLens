@@ -1,0 +1,34 @@
+{
+  "field_mapping": {
+    "Fund Name": "fund_name",
+    "Fund name": "fund_name",
+    "Name": "fund_name",
+    "Date": "date",
+    "Date of NAV": "date",
+    "Nav Date": "date",
+    "NAV": "nav",
+    "Net Asset Value": "nav",
+    "Price": "nav",
+    "Category": "category",
+    "Fund Category": "category",
+    "Type": "category",
+    "Inception Date": "inception_date",
+    "Start Date": "inception_date",
+    "Manager": "manager",
+    "Fund Manager": "manager",
+    "Company": "manager"
+  },
+  "required_fields": ["fund_name", "date", "nav", "category"],
+  "optional_fields": ["inception_date", "manager"],
+  "allowed_categories": [
+    "Equity",
+    "Debt",
+    "Hybrid",
+    "Money Market",
+    "Commodity",
+    "Bond"
+  ],
+  "date_format": "%Y-%m-%d",
+  "nav_min": 0.01,
+  "nav_max": 1000000.0
+}

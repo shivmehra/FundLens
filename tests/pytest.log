@@ -1,0 +1,19 @@
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+ERROR    src.validators.data_validator:data_validator.py:89 Row 1 validation error: Row 1 missing required fields: ['NAV']
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:79 Row 1 validation failed: Input should be greater than 0
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:79 Row 1 validation failed: Input should be a valid date or datetime, invalid character in year
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:79 Row 1 validation failed: Input should be a valid string
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
+DEBUG    src.validators.data_validator:data_validator.py:62 Row 2 validated successfully
+DEBUG    src.validators.data_validator:data_validator.py:79 Row 3 validation failed: Input should be a valid string
+INFO     src.validators.data_validator:data_validator.py:196 Batch validation: 2 valid, 1 errors
+DEBUG    src.validators.data_validator:data_validator.py:35 Loaded schema config from C:\Shiv\Projects\AIML\FundLens\config\schema.json
+DEBUG    src.validators.data_validator:data_validator.py:62 Row 1 validated successfully
