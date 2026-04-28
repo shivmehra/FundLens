@@ -8,6 +8,8 @@ from sqlalchemy import create_engine, event
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool
 
+from src.database.base import Base
+
 
 @pytest.fixture(scope="session")
 def fixtures_dir():
@@ -111,6 +113,17 @@ def test_db_session(test_db_engine):
 def db_session(test_db_session):
     """Alias for test_db_session for convenience."""
     return test_db_session
+
+
+@pytest.fixture
+def db(test_db_engine, test_db_session):
+    """Create test database with tables initialized."""
+    # Create all tables
+    Base.metadata.create_all(bind=test_db_engine)
+    
+    yield test_db_session
+    
+    # Cleanup is handled by test_db_session fixture
 
 
 # Pytest hooks

@@ -1,0 +1,3 @@
+{
+  "tests/test_upload_endpoint.py::TestUploadEndpoint::test_upload_csv_success": true
+}
